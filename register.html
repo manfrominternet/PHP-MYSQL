@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+  Zakładanie konta
+</h1>
+
+    <form action="register.php" method="post">
+        <label for="fname">Imie:</label><br>
+        <input type="text" id="imie" name="imie" required><br>
+        <label for="lname">Nazwisko:</label><br>
+        <input type="text" id="nazwisko" name="nazwisko" required><br>
+        <label for="ulogin">Unikalny Login:</label><br>
+        <input type="text" id="login" name="login" required><br>
+        <label for="haslo">Hasło:</label><br>
+        <input type="password" id="haslo" name="haslo" required><br>
+         <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="adres">Adres zamieszkania:</label><br>
+        <input type="text" id="adres" name="adres" required><br>
+        <label for="wyksztalcenie">Wyksztalcenie:</label><br>
+        <input list="wyksztalcenie" name="wyksztalcenie" id="wykszt" required><br>
+         <datalist id="wyksztalcenie">
+          <option name= "wyksztalcenie" value="podstawowe">
+          <option name= "wyksztalcenie" value="srednie">
+          <option name= "wyksztalcenie" value="wyzsze">
+        </datalist>
+         <label for="zainteresowania">Zainteresownaia:</label><br>
+           <input list="zaint" name="zainteresowanie" id="zainteresowanie" required><br>
+         <datalist id="zaint">
+          <option name= "zainteresowanie" value="jazda konna">
+          <option name= "zainteresowanie" value="bieganie">
+          <option name= "zainteresowanie" value="jezyki obce">
+          <option name= "zainteresowanie" value="programowanie">
+          <option name= "zainteresowanie" value="badminton">
+        </datalist> 
+        <button type="submit" id="wyslij" value="skonczone">Przeslij Dane</button>
+      </form>
+
+</body>
+</html>
+
